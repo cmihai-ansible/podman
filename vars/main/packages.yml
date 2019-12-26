@@ -27,14 +27,12 @@ _podman_packages_install:
     - skopeo
     - buildah
     - slirp4netns
-    - shadow-utils46-newxidmap
   RedHat_7:
     - podman-docker
     - podman
     - skopeo
     - buildah
     - slirp4netns
-    - shadow-utils46-newxidmap
   CentOS_8:
     - "@container-tools"
     - podman-docker
