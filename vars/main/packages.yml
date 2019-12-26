@@ -34,12 +34,16 @@ _podman_packages_install:
     - buildah
     - slirp4netns
   CentOS_8:
-    - "@container-tools"
     - podman-docker
+    - podman
+    - skopeo
+    - buildah
     - slirp4netns
   RedHat_8:
-    - "@container-tools"
     - podman-docker
+    - podman
+    - skopeo
+    - buildah
     - slirp4netns
   Fedora_31:
     - podman-docker
