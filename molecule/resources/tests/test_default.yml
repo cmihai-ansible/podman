@@ -3,9 +3,9 @@
 command:
   info:
     exit-status: 0
-    exec: "podman info"
+    exec: "podman version"
     stdout:
-      - "/rootless/"
+      - "/Version/"
     stderr: []
     timeout: 10000      # in milliseconds
     skip: false
