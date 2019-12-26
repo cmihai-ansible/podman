@@ -24,6 +24,10 @@ Role Variables
 
 ```
 podman_remove_packages: true
+podman_max_user_namespaces: 10000
+podman_user: devops
+podman_subuid: 100000
+podman_subgid: 65536
 ```
 
 Dependencies
@@ -47,6 +51,10 @@ Example Playbook
         name: crivetimihai.podman
       vars:
         podman_remove_packages: true
+        podman_max_user_namespaces: 10000
+        podman_user: devops
+        podman_subuid: 100000
+        podman_subgid: 65536
       tags: podman
 ```
 

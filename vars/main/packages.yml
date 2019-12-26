@@ -20,23 +20,32 @@ _podman_packages_remove:
 
 # Install packages
 _podman_packages_install:
-  all:
+  all: []
   CentOS_7:
     - podman-docker
     - podman
     - skopeo
     - buildah
+    - slirp4netns
+    - shadow-utils46-newxidmap
   RedHat_7:
     - podman-docker
     - podman
     - skopeo
     - buildah
+    - slirp4netns
+    - shadow-utils46-newxidmap
   CentOS_8:
     - "@container-tools"
     - podman-docker
+    - slirp4netns
   RedHat_8:
     - "@container-tools"
     - podman-docker
+    - slirp4netns
   Fedora_31:
-    - "@container-tools"
     - podman-docker
+    - podman
+    - skopeo
+    - buildah
+    - slirp4netns

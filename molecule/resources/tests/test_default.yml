@@ -1,11 +1,26 @@
 # Molecule managed
 ---
 command:
-  help:
+  info:
     exit-status: 0
-    exec: "systemctl is-active podman"
+    exec: "podman info"
     stdout:
       - "/active/"
     stderr: []
     timeout: 10000      # in milliseconds
+    skip: false
+
+  pull:
+    exit-status: 0
+    exec: "podman pull alpine"
+    stderr: []
+    skip: false
+
+  run:
+    exit-status: 0
+    exec: "podman run --net host --rm -ti alpine echo hello"
+    stdout:
+      - "hello"
+    stderr: []
+    timeout: 10000
     skip: false
