@@ -8,7 +8,7 @@ podman
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/crivetimihai/podman(https://galaxy.ansible.com/crivetimihai/podman)
+[https://galaxy.ansible.com/crivetimihai/podman](https://galaxy.ansible.com/crivetimihai/podman)
 
 ```bash
 ansible-galaxy install crivetimihai.podman
