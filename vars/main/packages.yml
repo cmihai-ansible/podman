@@ -17,8 +17,6 @@ _podman_packages_remove:
   CentOS_8: []
   RedHat_8: []
   Fedora_31: []
-  Debian_10: []
-  Ubuntu_18: []
 
 # Install packages
 _podman_packages_install:
@@ -53,7 +51,3 @@ _podman_packages_install:
     - skopeo
     - buildah
     - slirp4netns
-  Debian_10:
-    - podman
-  Ubuntu_18:
-    - podman
