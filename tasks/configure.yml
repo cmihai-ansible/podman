@@ -1,7 +1,7 @@
 ---
 - name: set max_user_namespaces
   sysctl:
-    name: max_user_namespaces
+    name: user.max_user_namespaces
     value: "{{ podman_max_user_namespaces }}"
     sysctl_set: true
     state: present
