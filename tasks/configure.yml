@@ -18,5 +18,5 @@
 - name: create /etc/subgid
   copy:
     content: "{{ podman_user }}:{{ podman_subuid }}:{{ podman_subgid }}"
-    dest: /etc/subuid
+    dest: /etc/subgid
   become: true
